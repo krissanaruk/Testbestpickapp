@@ -8,10 +8,10 @@ ${URL}                        http://127.0.0.1:4723
 ${ANDROID_AUTOMATION_NAME}     UiAutomator2
 ${ANDROID_PLATFORM_NAME}       Android
 ${ANDROID_PLATFORM_VERSION}    15
-${ANDROID_APP}                 C:\\Users\\User\\AndroidStudioProjects\\Bestpick_android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
+${ANDROID_APP}                  C:\\Users\\earth\\AndroidStudioProjects\\ReviewHub_android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
 ${APP_PACKAGE}                 com.example.reviewhub
 
-${VALID_EMAIL}                bestpicktest@gmail.com
+${VALID_EMAIL}                thanatornnunu@gmail.com
 ${INVALID_EMAIL}              1234
 ${password}                   terkrub2412
 ${confirm_password}           terkrub2412
@@ -23,7 +23,7 @@ ${NULL}
 *** Test Cases ***
 
 Valid register Test
-    [Documentation]    Test valid email 
+    [Documentation]    ตรวจสอบการลงทะเบียนด้วยอีเมลที่ถูกต้อง 
     Open Test Application
     Click Element    id=${APP_PACKAGE}:id/register    
     Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerusername    timeout=30s 
@@ -32,7 +32,7 @@ Valid register Test
 
 
 Invalid register Test1
-    [Documentation]    Test Invalid Duplicate email
+    [Documentation]    ตรวจสอบการลงทะเบียนด้วยอีเมลที่มีอยู่แล้ว
     Open Test Application
     Click register
     Input Text    id=${APP_PACKAGE}:id/registerusername    ${Duplicate_email}    
@@ -41,7 +41,7 @@ Invalid register Test1
     Close Application
 
 Invalid register Test
-    [Documentation]    Test Invalid Duplicate email
+    [Documentation]    ตรวจสอบการลงทะเบียนด้วยอีเมลที่ไม่ใช่อีเมล
     Open Test Application
     Click register
     Input Text    id=${APP_PACKAGE}:id/registerusername    ${INVALID_EMAIL}
@@ -51,7 +51,7 @@ Invalid register Test
     Close Application
 
 Invalid register Test
-    [Documentation]    Test Invalid Duplicate email
+    [Documentation]    ตรวจสอบการลงทะเบียนโดยไม่กรอกอีเมล
     Open Test Application
     Click register
     Input Text    id=${APP_PACKAGE}:id/registerusername    ${NULL}   
@@ -62,7 +62,19 @@ Invalid register Test
 
 Valid password Test
 
-    [Documentation]    Test valid  password
+    [Documentation]   ตรวจสอบการส่ง OTP ไปยังอีเมล
+    Open Test Application
+    Click Element    id=${APP_PACKAGE}:id/register    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerusername    timeout=30s  
+    Input Text    id=${APP_PACKAGE}:id/registerusername    ${VALID_EMAIL}    
+    Click Element    id=${APP_PACKAGE}:id/btnregister    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/otp1    timeout=150s  
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/otp1    timeout=150s
+    Sleep    10s
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerpassword    timeout=30s
+Valid password Test
+
+    [Documentation]    ตรวจสอบการสร้างรหัสผ่านด้วยรหัสผ่านที่ตรงกัน
     Open Test Application
     Click Element    id=${APP_PACKAGE}:id/register    
     Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerusername    timeout=30s  
@@ -74,6 +86,45 @@ Valid password Test
     Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerpassword    timeout=30s
     Input Text    id=${APP_PACKAGE}:id/registerpassword    ${password}    
     Input Text    id=${APP_PACKAGE}:id/registerpasswordconfirm    ${confirm_password}    
+    Click Element    id=${APP_PACKAGE}:id/registerButton    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/main    timeout=30s    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/main    timeout=30s
+    Element Should Be Visible    id=${APP_PACKAGE}:id/main    
+    Close Application
+
+Invalid password Test1
+
+    [Documentation]    ตรวจสอบการสร้างรหัสผ่านด้วยรหัสผ่านที่ไม่ตรงกัน
+    Open Test Application
+    Click Element    id=${APP_PACKAGE}:id/register    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerusername    timeout=30s  
+    Input Text    id=${APP_PACKAGE}:id/registerusername    ${VALID_EMAIL}    
+    Click Element    id=${APP_PACKAGE}:id/btnregister    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/otp1    timeout=150s  
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/otp1    timeout=150s
+    Sleep    10s
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerpassword    timeout=30s
+    Input Text    id=${APP_PACKAGE}:id/registerpassword    ${password}    
+    Input Text    id=${APP_PACKAGE}:id/registerpasswordconfirm    ${VALID_EMAIL}   
+    Click Element    id=${APP_PACKAGE}:id/registerButton  
+    Click Element    id=${APP_PACKAGE}:id/registerButton      
+    Wait Until Element Is Visible   "Password do not match"    timeout=30s      
+    Close Application
+
+Invalid password Test2
+
+    [Documentation]    ตรวจสอบการสร้างรหัสผ่านโดยไม่กรอกข้อมูล
+    Open Test Application
+    Click Element    id=${APP_PACKAGE}:id/register    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerusername    timeout=30s  
+    Input Text    id=${APP_PACKAGE}:id/registerusername    ${VALID_EMAIL}    
+    Click Element    id=${APP_PACKAGE}:id/btnregister    
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/otp1    timeout=150s  
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/otp1    timeout=150s
+    Sleep    10s
+    Wait Until Element Is Visible   id=${APP_PACKAGE}:id/registerpassword    timeout=30s
+    Input Text    id=${APP_PACKAGE}:id/registerpassword   ${NULL}     
+    Input Text    id=${APP_PACKAGE}:id/registerpasswordconfirm    ${NULL}  
     Click Element    id=${APP_PACKAGE}:id/registerButton    
     Wait Until Element Is Visible   id=${APP_PACKAGE}:id/main    timeout=30s    
     Wait Until Element Is Visible   id=${APP_PACKAGE}:id/main    timeout=30s

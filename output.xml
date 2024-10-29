@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-10-28T17:04:20.535975" rpa="false" schemaversion="5">
-<suite id="s1" name="registerTest" source="C:\Users\User\OneDrive\Desktop\Bestpick_Test\registerTest.robot">
-<test id="s1-t1" name="Invalid register Test1" line="34">
+<robot generator="Robot 7.1 (Python 3.12.4 on win32)" generated="2024-10-29T15:50:00.338799" rpa="false" schemaversion="5">
+<suite id="s1" name="registerTest" source="C:\Users\earth\.vscode\Testbestpickapp\registerTest.robot">
+<test id="s1-t1" name="Invalid password Test1" line="95">
 <kw name="Open Test Application">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${URL}</arg>
@@ -16,76 +16,769 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-10-28T17:04:20.799611" elapsed="10.128268"/>
+<status status="PASS" start="2024-10-29T15:50:00.586569" elapsed="8.113405"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-10-28T17:04:32.297252" level="INFO">criteria is com.example.reviewhub:id/logintext</msg>
+<msg time="2024-10-29T15:50:09.262316" level="INFO">criteria is com.example.reviewhub:id/logintext</msg>
 <arg>id=${APP_PACKAGE}:id/logintext</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-10-28T17:04:30.927879" elapsed="1.369373"/>
+<status status="PASS" start="2024-10-29T15:50:08.701250" elapsed="0.561066"/>
 </kw>
-<status status="PASS" start="2024-10-28T17:04:20.799611" elapsed="11.497641"/>
+<status status="PASS" start="2024-10-29T15:50:00.586569" elapsed="8.675747"/>
 </kw>
-<kw name="Click register">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-28T17:04:32.299266" level="INFO">Clicking element 'id=com.example.reviewhub:id/register'.</msg>
-<msg time="2024-10-28T17:04:32.481539" level="INFO">criteria is com.example.reviewhub:id/register</msg>
+<msg time="2024-10-29T15:50:09.263338" level="INFO">Clicking element 'id=com.example.reviewhub:id/register'.</msg>
+<msg time="2024-10-29T15:50:09.392705" level="INFO">criteria is com.example.reviewhub:id/register</msg>
 <arg>id=${APP_PACKAGE}:id/register</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-28T17:04:32.298259" elapsed="0.183280"/>
+<status status="PASS" start="2024-10-29T15:50:09.262316" elapsed="0.130389"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-10-28T17:04:34.203493" level="INFO">criteria is com.example.reviewhub:id/registerusername
-criteria is com.example.reviewhub:id/registerusername</msg>
+<msg time="2024-10-29T15:50:11.087912" level="INFO">criteria is com.example.reviewhub:id/registerusername</msg>
 <arg>id=${APP_PACKAGE}:id/registerusername</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-10-28T17:04:32.482562" elapsed="1.722437"/>
-</kw>
-<status status="PASS" start="2024-10-28T17:04:32.298259" elapsed="1.906863"/>
+<status status="PASS" start="2024-10-29T15:50:09.392705" elapsed="1.695207"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-10-28T17:04:34.206532" level="INFO">Typing text 'earthsrichok31@gmail.com' into text field 'id=com.example.reviewhub:id/registerusername'</msg>
-<msg time="2024-10-28T17:04:34.305159" level="INFO">criteria is com.example.reviewhub:id/registerusername</msg>
+<msg time="2024-10-29T15:50:11.088909" level="INFO">Typing text 'thanatornnunu@gmail.com' into text field 'id=com.example.reviewhub:id/registerusername'</msg>
+<msg time="2024-10-29T15:50:11.662401" level="INFO">criteria is com.example.reviewhub:id/registerusername</msg>
 <arg>id=${APP_PACKAGE}:id/registerusername</arg>
-<arg>${Duplicate_email}</arg>
+<arg>${VALID_EMAIL}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-10-28T17:04:34.205122" elapsed="0.100037"/>
+<status status="PASS" start="2024-10-29T15:50:11.087912" elapsed="0.574489"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-28T17:04:34.307101" level="INFO">Clicking element 'id=com.example.reviewhub:id/btnregister'.</msg>
-<msg time="2024-10-28T17:04:35.800561" level="INFO">criteria is com.example.reviewhub:id/btnregister</msg>
+<msg time="2024-10-29T15:50:11.664408" level="INFO">Clicking element 'id=com.example.reviewhub:id/btnregister'.</msg>
+<msg time="2024-10-29T15:50:12.881962" level="INFO">criteria is com.example.reviewhub:id/btnregister</msg>
 <arg>id=${APP_PACKAGE}:id/btnregister</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-28T17:04:34.306103" elapsed="1.494458"/>
+<status status="PASS" start="2024-10-29T15:50:11.663407" elapsed="1.218555"/>
 </kw>
-<kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>Email already registered</arg>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-10-29T15:52:23.048225" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A4CB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements</msg>
+<msg time="2024-10-29T15:52:25.095154" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7890&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements</msg>
+<msg time="2024-10-29T15:52:27.130769" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7AD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-10-29T15:52:30.729319" level="FAIL">InvalidSessionIdException: Message: A session is either terminated or not started
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:309:15)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:512:15
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-10-29T15:52:29.158853" elapsed="1.771812">InvalidSessionIdException: Message: A session is either terminated or not started
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:309:15)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:512:15
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+    [ Message content over the limit has been removed. ]
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)</status>
+</kw>
+<msg time="2024-10-29T15:52:30.934199" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: A session is either terminated or not started
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:309:15)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:512:15
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+    [ Message content over the limit has been removed. ]
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)</msg>
+<msg time="2024-10-29T15:52:30.937451" level="INFO">criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1
+criteria is com.example.reviewhub:id/otp1</msg>
+<msg time="2024-10-29T15:52:30.938956" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7DD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<arg>id=${APP_PACKAGE}:id/otp1</arg>
+<arg>timeout=150s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2024-10-29T15:50:12.883241" elapsed="138.059474">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7DD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>id=${APP_PACKAGE}:id/otp1</arg>
+<arg>timeout=150s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.943718" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.943718" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>id=${APP_PACKAGE}:id/registerpassword</arg>
 <arg>timeout=30s</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2024-10-28T17:04:35.800561" elapsed="0.053032"/>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.943718" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>id=${APP_PACKAGE}:id/registerpassword</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.944720" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>id=${APP_PACKAGE}:id/registerpasswordconfirm</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.944720" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>id=${APP_PACKAGE}:id/registerButton</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.944720" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>id=${APP_PACKAGE}:id/registerButton</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.945717" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>"Password do not match"</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2024-10-29T15:52:30.945717" elapsed="0.000000"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-10-28T17:04:35.853593" elapsed="0.471803"/>
+<status status="NOT RUN" start="2024-10-29T15:52:30.946719" elapsed="0.000000"/>
 </kw>
-<doc>Test Invalid Duplicate email</doc>
-<status status="PASS" start="2024-10-28T17:04:20.798583" elapsed="15.527317"/>
+<doc>ตรวจสอบการสร้างรหัสผ่านด้วยรหัสผ่านที่ไม่ตรงกัน</doc>
+<status status="FAIL" start="2024-10-29T15:50:00.583980" elapsed="150.362739">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7DD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
 </test>
 <doc>Test the registration functionality with OTP in the BestPick app.</doc>
-<status status="PASS" start="2024-10-28T17:04:20.537962" elapsed="15.789205"/>
+<status status="FAIL" start="2024-10-29T15:50:00.339798" elapsed="150.608920"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="registerTest">registerTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="registerTest">registerTest</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-10-29T15:52:23.048225" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A4CB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements</msg>
+<msg time="2024-10-29T15:52:25.095154" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7890&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements</msg>
+<msg time="2024-10-29T15:52:27.130769" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000018C3F5A7AD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/697dfb9f-65ae-47bd-a69a-ed5bdfbc4d95/elements</msg>
+<msg time="2024-10-29T15:52:30.934199" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: InvalidSessionIdException: Message: A session is either terminated or not started
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:309:15)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:512:15
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:365:14)
+    [ Message content over the limit has been removed. ]
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\earth\AppData\Roaming\npm\node_modules\appium\node_modules\express\lib\router\index.js:346:12)</msg>
 </errors>
 </robot>

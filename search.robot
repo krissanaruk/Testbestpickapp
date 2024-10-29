@@ -8,10 +8,10 @@ ${URL}                        http://127.0.0.1:4723
 ${ANDROID_AUTOMATION_NAME}     UiAutomator2
 ${ANDROID_PLATFORM_NAME}       Android
 ${ANDROID_PLATFORM_VERSION}    15
-${ANDROID_APP}                 C:\\Users\\User\\AndroidStudioProjects\\Bestpick_android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
+${ANDROID_APP}                  C:\\Users\\earth\\AndroidStudioProjects\\ReviewHub_android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
 ${APP_PACKAGE}                com.example.reviewhub
 ${VALID_EMAIL}                earthsrichok31@gmail.com    
-${VALID_PASSWORD}             1234
+${VALID_PASSWORD}             bestpick7890
 ${Searching}                  Nack
 ${Validsearching}             Ging
 

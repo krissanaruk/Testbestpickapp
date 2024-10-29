@@ -8,11 +8,11 @@ ${URL}                        http://127.0.0.1:4723
 ${ANDROID_AUTOMATION_NAME}     UiAutomator2
 ${ANDROID_PLATFORM_NAME}       Android
 ${ANDROID_PLATFORM_VERSION}    15
-${ANDROID_APP}                 C:\\Users\\User\\AndroidStudioProjects\\Bestpick_android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
+${ANDROID_APP}                  C:\\Users\\earth\\AndroidStudioProjects\\ReviewHub_android\\app\\build\\outputs\\apk\\debug\\app-debug.apk
 ${APP_PACKAGE}                com.example.reviewhub
  
 ${VALID_EMAIL}                earthsrichok31@gmail.com    
-${VALID_PASSWORD}             1234
+${VALID_PASSWORD}             bestpick7890
 ${INVALID_EMAIL_REGIS}              test1234@gmail.com
 ${INVALID_PASSWORD_REGIS}           test
 ${INVALID_EMAIL}              test
@@ -22,13 +22,13 @@ ${Null_PASSWORD}
 ${LOCKED_EMAIL}              ksnr2412@gmail.com
 ${LOCKED_MESSAGE}            Response: Too many failed login attempts. Try again in 5 minutes.
 ${LOGIN_ATTEMPTS}            5
-${GOOGLE_EMAIL}               terter2412@gmail.com
-${GOOGLE_PASSWORD}            terkrub2412
+${GOOGLE_EMAIL}               Vachiravitcp1@gmail.com
+${GOOGLE_PASSWORD}            0809084781
 
  
 *** Test Cases ***
 Valid Login Test
-    [Documentation]    Test valid login flow
+    [Documentation]    ตรวจสอบการเข้าสู่ระบบด้วยอีเมลและรหัสที่ถูกต้อง
     Open Test Application
     Input Text         id=${APP_PACKAGE}:id/Email       ${VALID_EMAIL}
     Input Text         id=${APP_PACKAGE}:id/password    ${VALID_PASSWORD}
@@ -37,25 +37,25 @@ Valid Login Test
     Close Application
  
 Invalid Login Test1
-    [Documentation]    Test invalid login email not register
+    [Documentation]    ตรวจสอบการเข้าสู่ระบบด้วยอีเมลที่ไม่ได้ลงทะเบียน
     Open Test Application
     Input Text         id=${APP_PACKAGE}:id/Email       ${INVALID_EMAIL_REGIS}
     Input Text         id=${APP_PACKAGE}:id/password    ${INVALID_PASSWORD_REGIS}
     Click Element      id=${APP_PACKAGE}:id/loginButton
-    Wait Until Page Contains    Response: No user found    timeout=30s
+    Wait Until Page Contains    Email or Password is incorrect.    timeout=30s
     Close Application
 
- Invalid Login Test
-    [Documentation]    Test invalid login with incorrect credentials
+ Invalid Login Test2
+    [Documentation]    ตรวจสอบการเข้าสู่ระบบด้วยข้อมูลที่ไม่ใช่อีเมล
     Open Test Application
     Input Text         id=${APP_PACKAGE}:id/Email       ${INVALID_EMAIL}
     Input Text         id=${APP_PACKAGE}:id/password    ${INVALID_PASSWORD}
     Click Element      id=${APP_PACKAGE}:id/loginButton
-    Wait Until Page Contains    Response: No user found    timeout=30s
+    Wait Until Page Contains    Email or Password is incorrect.    timeout=30s
     Close Application
  
 Invalid Login Test
-    [Documentation]    Test Null login
+    [Documentation]    ตรวจสอบการเข้าสู่ระบบด้วยการไม่กรอกข้อมูล
     Open Test Application
     Input Text         id=${APP_PACKAGE}:id/Email       ${Null_EMAIL}
     Input Text         id=${APP_PACKAGE}:id/password    ${Null_PASSWORD}
@@ -65,7 +65,7 @@ Invalid Login Test
 
 
 Account Lock After 5 Failed Attempts
-    [Documentation]    Test that the account is locked after 5 failed login attempts
+    [Documentation]   ตรวจสอบการล็อคบัญชีชั่วคราว
     Open Test Application
      FOR    ${i}    IN RANGE    1    ${${LOGIN_ATTEMPTS} + 1}
         Input Text         id=${APP_PACKAGE}:id/Email       ${LOCKED_EMAIL}
@@ -78,7 +78,7 @@ Account Lock After 5 Failed Attempts
    
    
 Google SignIn functionality 
-    [Documentation]    Test the Google Sign-In flow
+    [Documentation]    ตรวจสอบการเข้าสู่ระบบด้วย Google
     Open Test Application
     Wait Until Element Is Visible   id=${APP_PACKAGE}:id/logingoogle    timeout=30s
     Click Element      id=${APP_PACKAGE}:id/logingoogle
@@ -100,17 +100,33 @@ Google SignIn functionality
     Close Application
 
 Forget Password function
-    [Documentation]    Test that clicking on Forget Password navigates to the Forget Password page
+    [Documentation]    ตรวจสอบปุ่ม Forget password
     Open Test Application
     Click Element      id=${APP_PACKAGE}:id/forgetpass
     Wait Until Element Is Visible   xpath=//android.widget.TextView[@text='ForgetPassword']    timeout=30s  
     Close Application
 
 register function
-    [Documentation]    Test that clicking on Forget Password navigates to the Forget Password page
+    [Documentation]    ตรวจสอบปุ่ม Register
     Open Test Application
     Click Element      id=${APP_PACKAGE}:id/register
     Wait Until Element Is Visible   xpath=//android.widget.TextView[@text='Create New Account']    timeout=30s  
+    Close Application
+
+register function
+    [Documentation]    ตรวจสอบปุ่ม Register
+    Open Test Application
+    Input Text         id=${APP_PACKAGE}:id/Email       ${VALID_EMAIL}
+    Input Text         id=${APP_PACKAGE}:id/password    ${VALID_PASSWORD}
+
+Test Show Hide Password Functionality
+    [Documentation]    ตรวจสอบฟังก์ชันแสดง/ซ่อนรหัสผ่านในหน้าล็อกอิน
+    Open Test Application
+    Input Text    id=${APP_PACKAGE}:id/password    ${VALID_PASSWORD}
+    Click Element      id=${APP_PACKAGE}:id/togglePasswordConfirm
+    Wait Until Page Contains    ${VALID_PASSWORD}    timeout=5s
+    Click Element    id=${APP_PACKAGE}:id/togglePasswordConfirm
+    Wait Until Page Does Not Contain    ${VALID_PASSWORD}    timeout=5s
     Close Application
 
 *** Keywords ***
